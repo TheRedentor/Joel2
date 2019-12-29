@@ -10,7 +10,7 @@ body{
     background: linear-gradient(to right, white,#F5D576, #F5D576, #aa830c, #F5D576, #F5D576, white);
 }
 div.fons{
-    background-image: url(/img/banner.png);
+    background-image: url(img/banner.png);
 }
 
 .actual {
