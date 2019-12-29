@@ -1,0 +1,79 @@
+*{
+    margin:auto;
+    padding:auto;
+    font-family: Raleway, sans-serif;
+    line-height: 1.4em;
+    text-align: center;
+}
+body{
+    background: linear-gradient(to right, white,#F5D576, #F5D576, #aa830c, #F5D576, #F5D576, white);
+}
+header img{
+    padding: 10px;
+}
+main{
+    padding-top: 10px;
+}
+.banner{
+    background-image: url(/img/banner.png);
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.actual {
+    color: #dba63a;
+}
+
+nav li{
+    display: inline-block;
+}
+
+ul a{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #F5D576;
+    text-decoration: none;
+}
+/*  */
+nav a:hover{
+    color: #dba63a;
+}
+.borde{
+    border: #F5D576 5px ridge;
+}
+.video{
+    border: #F5D576 5px ridge;
+    width: 600px;
+    height: 402px;
+
+}
+.spotify{
+    border: #F5D576 5px ridge;
+    width: 600px;
+    height: 402px;
+}
+.xarxes{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.separar{
+    padding: 10px;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+    color: #F5D576;
+    /* position: fixed;  te sigue el footer */
+}

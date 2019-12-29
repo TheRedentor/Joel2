@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>31FAM</title>
+    <link rel="stylesheet" href="estilos_botiga.css">
+    
+</head>
+<body>
+    <div class="banner">
+    <header>
+        <img src="/img/31_Fam_Logo.png" alt="logo_31Fam">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Pàgina principal</a></li>
+            <li><a class="actual" href="botiga.html">Botiga</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="historia.html">Història</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <aside>
+        <div class="primera">
+            <a class="petita" href="/img/samarreta2_31_fam.png"><img class="borde" src="/img/samarreta2_31_fam.png" /></a>
+            <a class="petita" href="/img/samarreta_31_fam.png"><img class="borde" src="/img/samarreta_31_fam.png" /></a>
+            <a class="petita" href="/img/samarreta2_flor.png"><img class="borde" src="/img/samarreta2_flor.png" /></a>
+            <a class="petita" href="/img/samarreta_flor.png"><img class="borde" src="/img/samarreta_flor.png" /></a>
+            <a class="petita" href="/img/enganxines.png"><img class="borde" src="/img/enganxines.png" /></a>
+            <a class="petita" href="/img/disc.png"><img class="borde" src="/img/disc.png" /></a>
+            <!-- <p>foto merchandising</p> -->
+        </div>
+        <div id="contenidorImgGran">
+            <img id="imatgeGran" src="/img/Foto_grup.png" />
+        </div>
+    </aside>
+    <div class="xarxes">
+        <a class="separar" target="blank" href="https://twitter.com/31FAM_"><img src="/img/Twitter.png" alt="Twitter"></a>
+        <a class="separar" target="blank" href="https://www.instagram.com/31fam_"><img src="/img/Instagram.png" alt="Instagram"></a>
+        <a class="separar" target="_blank" href="https://open.spotify.com/artist/0LweECx5LKm6I3gIcWMdpB?si=rDrD1amKTZaOuKy57OivmA"><img src="/img/Spotify.png" alt="Spotify"></a>
+        <a class="separar" target="_blank" href="https://www.youtube.com/channel/UC9X30uS2tBqnVwEqpmA32xQ"><img src="/img/Youtube.png" alt="Youtube"></a>
+        <a class="separar" target="_blank" href="https://www.facebook.com/31fam"><img src="/img/Facebook.png" alt="Facebook"></a>
+        <!-- <p>xarxes socials</p> -->
+    </div>
+    <footer>
+        <p>© 31 FAM 2019</p>
+        <!-- <p>peu</p> -->
+    </footer>
+</body>
+</html>
+
+<script>
+    onload = function() {
+    let imatges = document.querySelectorAll('.petita')
+
+    for (let i = 0; i<imatges.length; i++){
+        let element = imatges[ i ]
+        element.onclick = function(esdeveniment){
+            esdeveniment.preventDefault()		      
+            imatgeGran.src = this.href
+            contenidorImgGran.style.display = 'block'
+            imatgeGran.classList.remove('senseAnimar')
+            imatgeGran.classList.add('animada')
+        }
+    }
+
+    imatgeGran.onclick = function (event){
+        contenidorImgGran.style.display = 'none'
+        imatgeGran.classList.remove('animada')
+        imatgeGran.classList.add('senseAnimar')
+        }
+}
+</script>

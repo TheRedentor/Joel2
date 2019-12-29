@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>31FAM</title>
+    <link rel="stylesheet" href="estilos_historia.css">
+</head>
+<body>
+    <div class="fons"> 
+        <header >
+            <img class="logo" src="/img/31_Fam_Logo.png" alt="logo_31Fam">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Pàgina principal</a></li>
+                <li><a href="botiga.html">Botiga</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a class="actual" href="historia.html">Història</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="principal">
+        <main>
+            <p>31 FAM és un grup de musica urbana de Sabadell que van començar al món musical al 2017. <br>
+                El grup està format per sis membres d'edats entre 17 i 18: Kid Pi, Lil Didi, Koalekay, Bandam, Joey C i AAA. <br> 
+                31 FAM crea cançons barejant els diversos estils dels integrants com els idiomes que ells mateixos parlen. <br>
+                Així doncs en un tema utilitzen català, castellà i anglés. <br>
+                Al cap d'un temps de proves, millorant les produccions i veient que las cançons prenien forma, las van pujar a les plataformes digitals per conèixer l'opinió de la gent. 31 FAM es transformava en un referent per a la gente jove i en pocs mesos els temes sumaven milions de visitas, milers de comentaris positius  i  començen a sonar amb força a les festes de discoteques juvenils.
+            </p>
+            <!-- <p>historia del grup</p> -->
+        </main>
+        <aside>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="borde" src="/img/integrante_uno.png" style="width:100%">
+                    <h2 class="text">BANDAM</h2>
+                </div>
+              
+                <div class="mySlides fade">
+                    <img class="borde" src="/img/integrante_dos.png" style="width:100%">
+                    <h2 class="text">KOALEKAY</h2>
+                </div>
+              
+                <div class="mySlides fade">
+                    <img class="borde"  src="/img/integrante_tres.png" style="width:100%">
+                    <h2 class="text">JOEY C</h2>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="borde" src="/img/integrante_cuatro.png" style="width:100%">
+                    <h2 class="text">LIL DIDI</h2>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="borde" src="/img/integrante_cinco.png" style="width:100%">
+                    <h2 class="text">KID PI</h2>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="borde" src="/img/integrante_seis.png" style="width:100%">
+                    <h2 class="text">AAA</h2>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+        </aside>
+    </div>
+    <div class="xarxes">
+        <a class="separar" target="_blank" href="https://twitter.com/31FAM_"><img src="/img/Twitter.png" alt="Twitter"></a>
+        <a class="separar" target="_blank" href="https://www.instagram.com/31fam_/?hl=es"><img src="/img/Instagram.png" alt="Instagram"></a>
+        <a class="separar" target="_blank" href="https://open.spotify.com/artist/0LweECx5LKm6I3gIcWMdpB"><img src="/img/Spotify.png" alt="Spotify"></a>
+        <a class="separar" target="_blank" href="https://www.youtube.com/channel/UC9X30uS2tBqnVwEqpmA32xQ"><img src="/img/Youtube.png" alt="Youtube"></a>
+        <a class="separar" target="_blank" href="https://www.facebook.com/31fam/"><img src="/img/Facebook.png" alt="Facebook"></a>
+        <!-- <p>xarxes socials</p> -->
+    </div>
+    <footer>
+        <p>© 31 FAM 2019</p>
+        <!-- <p>peu</p> -->
+    </footer>
+</body>
+</html>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+</script>
